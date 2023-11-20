@@ -254,6 +254,7 @@
 /* ___________________________________________________________________________ */
 .flash-parent{
     position: relative;
+    overflow: hidden;
 }
 .flashing{
     position: absolute;
@@ -294,6 +295,116 @@
 
     }
 }
+
+.gate span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top:0;
+    background-color:rgba(26, 26, 0, 0.327);
+    inset: 2px;
+    transition: .5s;
+}
+.gate span:nth-child(1){
+    clip-path: polygon(0 0px, 100% 0px, 50% 48%, 00% 00%);
+}
+.gate:hover span:nth-child(1){
+    clip-path: polygon(0 0px, 100% 0px, 50% 2%, 00% 00%);
+    
+}
+
+.gate span:nth-child(2){
+    clip-path: polygon(52% 50%, 100% 0%, 100% 100%, 52% 50%);
+}
+.gate:hover span:nth-child(2){
+    
+    clip-path: polygon(98% 50%, 100% 0%, 100% 100%, 98% 50%);
+}
+
+.gate span:nth-child(3){
+    clip-path: polygon(0% 100%, 100% 100%, 50% 52% , 0% 100%) ;
+}
+.gate:hover span:nth-child(3){
+    clip-path: polygon(0% 100%, 100% 100%, 50% 98% , 0% 100%) ;
+    
+}
+
+    .gate span:nth-child(4){
+        clip-path: polygon(0% 0%, 0% 100%, 48% 50%, 48% 50%);
+    }
+    .gate:hover span:nth-child(4){
+        
+        clip-path: polygon(0% 0%, 0% 100%, 2% 50%, 2% 48%);
+    }
+
+
+/* __________________-- */
+.gates span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top:0;
+    background-color:rgba(128, 128, 128, 0.355);
+    inset: 2px;
+    transition: .1s;
+}
+.gates span:nth-child(1){
+    clip-path: polygon(0% 00%, 50% 50%, 50% 00%, 0% 0%);}
+.gates:hover span:nth-child(1){
+    clip-path: polygon(50% 00%, 50% 50%, 50% 00%, 0% 0%);}
+
+.gates span:nth-child(2){
+    clip-path: polygon(50% 00%, 50% 50%, 100% 00%, 50% 0%);
+    transition-delay: .1s;
+}
+.gates:hover span:nth-child(2){
+    clip-path: polygon(100% 00%, 50% 50%, 100% 00%, 50% 0%);}
+
+.gates span:nth-child(3){
+    clip-path: polygon(100% 00%, 50% 50%, 100% 50%, 100% 0%);}
+.gates:hover span:nth-child(3){
+    clip-path: polygon(100% 50%, 50% 50%, 100% 50%, 100% 0%);
+    transition-delay: .2s;
+}
+
+.gates span:nth-child(4){
+    clip-path: polygon(100% 50%, 50% 50%, 100% 100%, 100% 100%);}
+.gates:hover span:nth-child(4){
+    clip-path: polygon(100% 100%, 50% 50%, 100% 100%, 100% 100%);
+    transition-delay: .3s;
+}
+
+.gates span:nth-child(5){
+    clip-path: polygon(100% 100%, 50% 50%, 50% 100%, 100% 100%);}
+.gates:hover span:nth-child(5){
+    clip-path: polygon(50% 100%, 50% 50%, 50% 100%, 100% 100%);
+    transition-delay: .4s;
+}
+
+.gates span:nth-child(6){
+    clip-path: polygon(50% 100%, 50% 50%, 00% 100%, 50% 100%);}
+.gates:hover span:nth-child(6){
+    clip-path: polygon(0% 100%, 50% 50%, 00% 100%, 50% 100%);
+    transition-delay: .5s;
+}
+
+.gates span:nth-child(7){
+    clip-path: polygon(00% 50%, 50% 50%, 00% 100%, 00% 50%);}
+.gates:hover span:nth-child(7){
+    clip-path: polygon(00% 50%, 50% 50%, 00% 50%, 00% 50%);
+    transition-delay: .6s;
+}
+
+.gates span:nth-child(8){
+    clip-path: polygon(0% 50%, 50% 50%, 0% 00%, 0% 50%);}
+.gates:hover span:nth-child(8){
+    clip-path: polygon(0% 0%, 50% 50%, 0% 00%, 0% 50%);
+    transition-delay: .7s;
+}
+
+
 /* ______________________ */
 .break1{
     margin: 50px 0;
@@ -553,14 +664,42 @@
 
 }
 /* ____________________________ */
-.reserv{
+.reserv , .ask{
     font-family: "agbalumo";
     margin-bottom: 150px;
+    padding: 10px 0 ;
+    border-radius: 20px;
 }
-
+.reserv input,
+.ask input{
+    transition: 1s;
+}
+.reserv input:active,
+.ask input:active{
+    transform: scale(1.1) !important;
+}
+@layer {
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+}
+}
 /* ___________________________ */
 .footer{
     padding: 20px;
+}
+@media (min-width:768px) {
+    .footer{
+        height: 60vh;
+    }
+}
+.footer ul li {
+    padding: 5px 15px;
+    transition: .5s;
+}
+.footer ul li:hover{
+    margin-right: -10px;
+    
 }
 .footer ul a {
     text-decoration: none;
@@ -576,6 +715,46 @@
     transform: scale(1.05);
     font-family: "agbalumo";
 }
+.footer .icon i{
+    background-color: #08333c58;
+    padding: 15px;
+    font-size: 30px;
+    border-radius: 10px;
+    margin: 15px;
+    transition: .5s;
+    position: relative;
+}
+
 .footer .img img{
-    width: 100%;
+    width: 80%;
+}
+
+.footer .icon i:hover{
+    margin-top: -10px;
+    transform: scale(.8);
+}
+.footer .fa-facebook:hover{
+    color: #3b5998 !important;
+    background-color: white !important;
+    border-radius: 50% !important;
+}
+.footer .fa-twitter:hover{
+    color: #1da1f2 !important;
+    background-color: white !important;
+    border-radius: 50% !important;
+}
+.footer .fa-linkedin:hover{
+    color: #0a66c2 !important;
+    background-color: white !important;
+    border-radius: 50% !important;
+}
+.footer .fa-instagram:hover{
+    color: #c32aa3 !important;
+    background-color: white !important;
+    border-radius: 50% !important;
+}
+.footer .fa-twitch:hover{
+    color: #9146ff !important;
+    background-color: white !important;
+    border-radius: 50% !important;
 }
