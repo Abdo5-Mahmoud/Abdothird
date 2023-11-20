@@ -1,0 +1,581 @@
+*{
+    box-sizing: border-box;
+    --bs-gradient : linear-gradient(180deg, rgba($white, .15), rgba($white, 0));
+}
+.bg-secondary{
+    background-color: #9ba4ac85 !important;
+}
+
+/* ____________________________ */
+
+.head{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+/* __________________ */
+.dropdown-menu .dropdown-item{
+    font-family: "agbalumo";
+}
+.dropdown-menu .dropdown-item:hover{
+    color: black !important;
+}
+/* __________________ */
+.f-l .a::first-letter{
+    margin-right: 2px;
+    font-size: 20px;
+    font-family: "agbalumo";
+}
+.f-l:hover .a::first-letter{
+    font-weight: bolder;
+    font-style: italic;
+}
+.f-ll::first-letter{
+    margin-right: 2px;
+    font-size: 20px;
+    font-family: "agbalumo";
+}
+.f-ll:hover::first-letter{
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.arrow{
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0px;
+    /* width: 100px;
+    height: 100px; */
+    transition: 1s !important;
+    overflow: hidden;
+    z-index: 2 !important;
+}
+/* .arrow .container{
+
+    transition: 1s !important;
+}*/
+.arrow .col1 i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+    font-size: 20px;
+    transition: 2s !important;
+    padding: 5px;
+    background-color: white;
+    border-radius: 50%;
+    left: -20px;
+    animation: tl 1s ease infinite;
+} 
+.arrow .col1{
+    width: 10px;
+    height: 100%;
+}
+@keyframes tl {
+    0%{
+        left: 5px;
+    }
+    50%{
+        left: 10px;
+    }
+    100%{
+        left: 5px;
+    }
+}
+.arrow .col2 {
+    transform: translateX(100%);
+    transition: 1s !important;
+    background-color: rgba(26, 26, 27, 0.327);
+    /* right: -100px; */
+    /* overflow: hidden; */
+    /* display: none; */
+    
+}
+.arrow .col2 i{
+    font-size: 25px;
+    padding: 5px;
+    margin: 5px;
+    transition: 1s;
+    cursor: pointer;
+}
+.arrow:hover .col2{
+    transform: translateX(0);
+}
+.arrow:hover .col1 i{
+    display: none;
+}
+
+
+.arrow .col2 .fa-facebook:hover{
+    color: #3b5998;
+    background-color: white;
+    border-radius: 50%;
+}
+.arrow .col2 .fa-twitter:hover{
+    color: #1da1f2;
+    background-color: white;
+    border-radius: 50%;
+}
+.arrow .col2 .fa-linkedin:hover{
+    color: #0a66c2;
+    background-color: white;
+    border-radius: 50%;
+}
+.arrow .col2 .fa-instagram:hover{
+    color: #c32aa3;
+    background-color: white;
+    border-radius: 50%;
+}
+.arrow .col2 .fa-twitch:hover{
+    color: #9146ff;
+    background-color: white;
+    border-radius: 50%;
+}
+/* _____________ */
+
+.alert{
+    font-family: agbalumo;
+}
+
+/* __________________ */
+.bg-mine{
+    /* background-color: #88cbd9; */
+    background-color: rgba(179, 200, 190, 0.429);
+}
+.main{
+    background-image: url(../img/ethan-robertson-SYx3UCHZJlo-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    z-index: 1;
+    font-family: "agbalumo";
+}
+.main .container{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: fit-content;
+    height: fit-content;
+}
+.main .container .cards .card{
+    background-color: transparent !important;
+    overflow: hidden !important;
+    transition: 1s !important;
+}
+.main .container .cards .card:hover{
+    outline: 1px solid #dddddd8f;
+}
+.main .container .cards .card img{
+    transition: .5s;
+    /* padding: 0 !important;  */
+}
+.main .container .cards .card:hover img{
+    transform: rotate(3deg) scale(1.1);
+}
+.main .container .cards .card .card-title,
+.main .container .cards .card .btn{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*  __________________________ */
+.nav nav .nav-item:hover{
+    box-shadow: 1px 2px 5px #ddd !important;
+}
+.log{
+    font-size: 25px;
+    font-family: Agbalumo;
+    font-style: italic;
+}
+.photoes{
+    font-family: Agbalumo ;
+}
+.photoes .information{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.photoes .tab-content .container .according .card{
+    background-color: transparent !important;
+    margin-bottom: 5px;
+}
+.width{
+    width: fit-content !important;
+}
+
+.mine .nav-item > .nav-link.active {
+    background-color: #29252542;
+}
+
+/* ______________________ */
+.poptitel{
+    font-family: "agbalumo";
+}
+
+/* ______________________ */
+.card-opacity{
+    background-color: rgba(166, 171, 172, 0.366);}
+/* ______________________ */
+
+.f-family{
+    font-family: "agbalumo";
+}
+.carou-eg{
+    height: 600px;
+    background-image: url(../img/flying-carpet-Si1MFhSLNWY-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+.carou-pa{
+    height: 600px;
+    background-image: url(../img/jorge-fernandez-salas-YGSh2Lyeddc-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+.carou-sa{
+    height: 600px;
+    background-image: url(../img/damian-patkowski-T-LfvX-7IVg-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+@media (max-width: 760px) {
+    .carou-pa
+    ,.carou-eg
+    ,.carou-sa{
+        height: fit-content;
+    }
+    .card-qur{
+        display: flex;
+    }
+}
+.img-thumbnail{
+    background-color: transparent !important;
+}
+/* ___________________________________________________________________________ */
+.flash-parent{
+    position: relative;
+}
+.flashing{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.flash-parent:hover .flashing{
+    animation: flas 1s linear ;
+}
+
+@keyframes flas {
+    20%{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+
+    }
+    50%{
+        border-radius: 50%;
+        opacity: .5;
+    }
+    99%{
+        width:110%;
+        height:110%;
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+        display: none;
+    border-radius: 0;
+
+    }
+}
+/* ______________________ */
+.break1{
+    margin: 50px 0;
+    width: 100%;
+    height: 30vh;
+    background-image: url(../img/lea-kobal-UlHxDEtBDM0-unsplash.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* ____________________________ */
+.break2{
+    margin: 50px 0;
+    width: 100%;
+    height: 30vh;
+    background-image: url(../img/john-towner-JgOeRuGD_Y4-unsplash.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* ____________________________ */
+
+.thanks{
+    font-family: "agbalumo";
+    width: 100%;
+    margin: auto;
+    /* overflow: hidden; */
+} 
+.sp-title{
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    background: linear-gradient(45deg , white 0% , #08333c 50% , white 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; 
+    font-family: "agbalumo";
+
+}
+
+
+.thanks .my-container{
+    font-family: "agbalumo" !important;
+    
+}
+.thanks .my-container .boxes .box{
+    background-image: url(../img/jeremy-bishop-G9i_plbfDgk-unsplash.jpg) !important;
+    background: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 500px;
+    padding: 20px 10px ;
+    position: relative;
+    border-radius: 15px 0;
+    transition: 1s;
+    z-index: 1;
+}
+.thanks .my-container .boxes .box::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #dddddd32;
+
+}
+.thanks .my-container .boxes .skill{
+    position: absolute;
+    width: 0%;
+    transition: 1s !important;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.thanks .my-container .boxes .box:hover .skill{
+    padding: 5px ;
+    width: 50%;
+    border-radius: 30px 0;
+    background-color: #3b5998 !important;
+
+}
+.thanks .my-container .boxes .icon {
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transition: 1s;
+    width: fit-content !important;
+}
+.boxes .box:hover .icon{
+    transform: rotate(360deg);
+    transform-origin: 50% 50% ;
+    left: 100%;
+    transform: translateX(-100%);
+    margin-left: 5px;
+}
+.boxes .box:hover{
+    transform: scale(.8);
+    outline: #0a66c2 solid 2px;
+    outline-offset: 2px;
+    
+}
+.thanks .my-container .boxes .icon img{
+    outline: solid 2px grey;
+    height: 100%;
+    border-radius: 50%;
+    
+}
+.thanks .my-container .boxes .box .body .text{
+    transition: 1s;
+}
+.thanks .my-container .boxes .box:hover .body .text{
+    color: transparent;
+}
+
+/* _________________________________________---- */
+.news{
+    font-family: "agbalumo";
+    background-color: #99999966;
+    margin: 100px 0;
+} 
+.news .cont{
+    transition: 1s;
+    margin-bottom: 50px !important;
+
+}
+.news .cont:hover{
+    box-shadow: 2px 0px 26px 10px #3b5998;
+    transform: scale(1.05);
+}
+.news .cont .text .head{
+    font-family: "agbalumo";
+    position: relative;
+}
+.news .cont .text .head::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-color: #08333c;
+    width: 20%;
+    height: 3px;
+    border-radius: 3px;
+    transition: 1s;
+}
+.news .cont:hover .text .head::after{
+    width: 30%;
+}
+
+.news .cont{
+    width: 80%;
+    height: 300px;
+    border-radius: 20px;
+    margin: auto;
+    background-color: #eee;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.news .cont .text{
+    padding: 10px;
+}
+.news .cont .text .body{
+    font-weight: normal;
+}
+.news .cont .text .foot ul{
+    list-style: none;
+}
+.news .cont .text .foot ul li{
+    margin: 0 10px;
+    padding: 3px;
+    background-color: #999;
+    color: black;
+    border-radius: 5px;
+    transition: .3s;
+}
+.news .cont .text .foot ul li:hover{
+    background-color: #08333c;
+    color: white;
+}
+.news .cont .img{
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+}
+.news .cont .img img{
+    width: 300%;
+    transition: 1s;
+}
+.news .cont:hover .img img{
+    transform: scale(1.2) rotate(3deg);
+}
+.news .cont .img::after{
+    content: '';
+    position: absolute;
+    height: 75%;
+    width: 50px;
+    background-color: #eee;
+    top: -20px;
+    left: -15px;
+    transform: skew(5deg);
+}/* _____________________________________- */
+
+.news .cont .sec{
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+}
+.news .cont .sec img{
+    width: 300%;
+    transition: 1s;
+}
+.news .cont:hover .sec img{
+    transform: scale(1.2) rotate(-3deg);
+}
+.news .cont .sec::after{
+    content: '';
+    position: absolute;
+    height: 75%;
+    width: 50px;
+    background-color: #eee;
+    top: -20px;
+    right: -40px;
+    transform: skew(4deg);
+}
+/* _______________________ */
+@media (max-width:770px) {
+    .news .cont{
+        flex-direction: column !important;
+        height: auto;
+    }
+    .news .cont .img{
+        order: 1;
+        width: 100% !important;
+    }
+    .news .cont .img::after{
+        display: none;
+    }
+    .news .cont .img img{
+        width: 100% !important;
+    }
+    .news .cont .sec{
+        order: 1;
+        width: 100% !important;
+    }
+    .news .cont .sec::after{
+        display: none;
+    }
+    .news .cont .sec img{
+        width: 100% !important;
+    }
+.news .cont .text{
+        order: 2;
+        width: 100% !important;
+    }
+
+}
+/* ____________________________ */
+.reserv{
+    font-family: "agbalumo";
+    margin-bottom: 150px;
+}
+
+/* ___________________________ */
+.footer{
+    padding: 20px;
+}
+.footer ul a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    transition: .5s;
+    display: inline-block;
+    border-radius: 15px;
+    
+}
+.footer ul a:hover{
+    background-color: #08333c;
+    transform: scale(1.05);
+    font-family: "agbalumo";
+}
+.footer .img img{
+    width: 100%;
+}

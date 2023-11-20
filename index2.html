@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/all.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,600;1,400;1,600&display=swap" rel="stylesheet">
+  <title>Sketch</title>
+</head>
+
+
+<body >
+  <div class="head">
+    <div class="nav">
+      <!-- Grey with black text -->
+    <nav class="navbar navbar-expand-md bg-dark bg-opacity-50 fixed-top navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./img/R.jpeg" width="50" alt="Brand Img">
+        </a>
+        <a class="navbar-brand font-weight-bold font-italic log" href="#">A</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse justify-content-between navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item f-l">
+              <a class="nav-link a" href="#hpage">Home</a>
+            </li>
+            <li class="nav-item f-l">
+              <a class="nav-link a" href="#photo">Images</a>
+            </li>
+            <li class="nav-item f-l">
+              <a class="nav-link a" href="#pop">Popular<small><sub>des</sub></small></a>
+            </li>
+            <li class="nav-item f-l">
+              <a class="nav-link a" href="#about">AboutUs</a>
+            </li>
+            <li class="nav-item dropdown f-l">
+              <a class="nav-link a dropdown-toggle border-info bordre-rounded" data-bs-toggle="dropdown">
+                More
+              </a>
+              <ul class="dropdown-menu  bg-dark">
+                <li><a class="dropdown-item text-light border bordre-info" href="#res">Reservation<sub><small>..!</small></sub></a></li>
+                <li><a class="dropdown-item text-light " href="#ask">Ask <sub><small>Us</small></sub> </a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" action="">
+              <input class="form-control col mr-sm-2 border border-info" type="text" placeholder="Search">
+              <button class="btn text-light mx-2 btn-outline-info" type="submit">Search</button>
+              <button type="button" class="btn text-light btn-outline-primary ml-2" data-bs-toggle="modal" data-bs-target="#myModal">
+                  Log In
+              </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="modal fade" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        
+          <!-- Modal Header -->
+          <div class="modal-header bg-secondary">
+            <h4 class="modal-title ">Log In</h4>
+            <button type="button" class="btn-close btn bg-light border border-dark" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+        
+          <!-- Modal body -->
+          <div class="modal-body bg-light">
+            <form action="">
+              <div class="mb-3 mt-3">
+                  <label for="email text-secodary was-validated" class="form-label">Email:</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                </div>
+                <div class="mb-3">
+                  <label for="pwd" class="form-label">Password:</label>
+                  <input type="password" class="form-control" id="pwd" value="12345" placeholder="Enter password" name="pswd">
+                </div>
+                <div class="form-check custom-checkbox">
+                  <input class="form-check-input  " type="checkbox" id="mySwitch" name="darkmode" value="yes" checked>
+                  <label class="form-check-label" for="mySwitch">Remember Me</label>
+              </div>
+            </form>
+            <div class="d-flex modal-footer justify-content-between">
+              <button type="submit" class="btn btn-outline-primary">Log IN</button>
+              <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div> 
+<!-- __________________________________________________________________________________ -->
+<div class="arrow d-flex text-center rounded">
+  <!-- <div class="coantainer d-flex p-relative"> -->
+    <div class="col1 p-relative">
+      <i class="fa-solid align-middle fa-arrow-right"></i>
+    </div>
+    <div id="col2" class="col2 p-relative rounded d-flex flex-column text-light">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-twitch"></i>
+      <i class="fa-brands fa-linkedin"></i>
+    </div>
+  <!-- </div> -->
+</div>
+<!-- __________________________________________________________________________________ -->
+<main id="hpage" class="main mb-5">
+  <div id="mainsec" class="main">
+    <div class="container rounded-top d-flex flex-column">
+        <h3 class="text-center">Places I Prefere ..</h3>
+        <div class="cards row gap-3">
+
+        <div class="card text-center border-0 col-8 col-sm-4 mx-auto col-mid-8 bg-secondary">
+          <img class="card-img-top rounded-top" src="./img/Egy.jpg" alt="Card image">
+          <div class="card-img-overlay">
+            <h4 class="card-title text-light">Egytp</h4>
+            <a href="#home" class="btn btn-outline-info text-light">See</a>
+          </div>
+        </div>
+        <div class="card text-center border-0 col-8 col-sm-4 mx-auto col-mid-8 bg-secondary">
+          <img class="card-img-top rounded-top" src="./img/Palastine.jpg" alt="Card image">
+          <div class="card-img-overlay">
+            <h4 class="card-title text-light">Palastine</h4>
+            <a href="#home" class="btn btn-outline-info text-light">See</a>
+          </div>
+        </div>
+        <div class="card text-center border-0 col-8 col-sm-4 mx-auto col-mid-8 bg-secondary">
+          <img class="card-img-top rounded-top" src="./img/southAa.jpg" alt="Card image">
+          <div class="card-img-overlay">
+            <h4 class="card-title text-light">South Africa</h4>
+            <a href="#home" class="btn btn-outline-info text-light">See</a>
+          </div>
+        </div>
+    </div>
+  
+  </div>
+</main>
+
+<!-- __________________________________________________________________________________ -->
+<div class="alert alert-info alert-dismissible fade show">
+  <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+  Quick <strong>Info!</strong> About Countries.
+</div>
+<!-- __________________________________________________________________________________ -->
+<div id="photo" class="bg-secodary photoes">
+  <!-- Nav tabs -->
+<ul class="nav mine  border-none bg-light bg-opacity-50 nav-tabs" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link text-dark hover-info active" id="egy" data-bs-toggle="tab" href="#home">Egypt</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-dark hover-info" id="pal" data-bs-toggle="tab" href="#menu1">Palastine</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-dark hover-info " id="sou" data-bs-toggle="tab" href="#menu2">South Africa</a>
+  </li>
+</ul>
+  <!-- Tab panes -->
+<div class="tab-content">
+  
+  <div id="home" class="tab-pane bg-light p-2 fade show active"><br>
+    <div class="container row mx-auto bg-light">
+      <div class="text col-sm-12 bg-opacity-50 rounded-top bg-secondary  col-md-6">
+        <h3 class="text-dark">Some Info About Egytp</h3>
+
+        <div id="accordion" class="according">
+
+          <div class="card text-dark">
+            <div class="card-header">
+              <a class="btn text-dark" data-bs-toggle="collapse" href="#collapseOne">
+                - Scientifec Methods 
+              </a>
+            </div>
+            <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+              <div class="card-body">
+                <li>
+                  They pointed very precisely to the north, using the stars as a guide.
+                </li>
+                <li>
+                  The pyramids were made mostly of limestone, and some had jewels and gold inside.
+                </li>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card text-dark">
+            <div class="card-header">
+              <a class="collapsed btn text-dark" data-bs-toggle="collapse" href="#collapseTwo">
+              - About Workers...
+              </a>
+            </div>
+            <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+              <div class="card-body">
+                <li>
+                  They were built to preserve tombs of pharaohs and their families.
+                </li>
+                <li>
+                  They were not built by slaves, but by skilled workers and farmers.
+                </li>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card text-dark">
+            <div class="card-header">
+              <a class="collapsed btn text-dark" data-bs-toggle="collapse" href="#collapseThree">
+              - Some Facts
+              </a>
+            </div>
+            <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+              <div class="card-body">
+                <li>
+                  The largest and oldest pyramid is the Great Pyramid of Giza, which is one of the Seven Wonders of the Ancient World.
+                </li>
+                <li>
+                  The pyramids had heavy doors, traps, curses, tunnels, and mysterious boxes to protect the tombs from robbers.
+                </li>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+      <div id="slider" class="carousel carousel-fade col-sm-12  col-md-6 slid " data-bs-ride="carousel">
+  
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#slider" data-bs-slide-to="1"></button>
+        </div>
+      
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/Egy.jpg" alt="Los Angeles" class="d-block mx-auto" style="width:100%">
+            <!-- <div class="carousel-caption bg-dark rounded bg-opacity-50 width mx-auto p-5 " >
+              <h3>Cairo</h3>
+              <p>One Of The Most Popular Places IN Egypt </p>
+            </div> -->
+          </div>
+          <div class="carousel-item">
+            <img src="./img/Egypt.jpg" alt="Chicago" class="d-block mx-auto" style="width:100%">
+            <!-- <div class="carousel-caption bg-dark rounded bg-opacity-50 width mx-auto p-5">
+              <h3>Giza</h3>
+              <p>You Should Go To The Pyramids At Least Once</p>
+            </div>  -->
+          </div>
+          <!-- Left and right controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      
+      </div>
+    </div>
+  
+  </div>
+  <!-- Slide ONe _________________________________________________________________________________ -->
+  <div id="menu1" class="container-fluid tab-pane bg-light p-2 fade"><br>
+    <div class="container row">
+      <div class="text  bg-secondary bg-opacity-50 rounded-top col-sm-12  col-md-6">
+        <h3 class="text-dark">Some Info About Palastine</h3>
+
+        <div id="accordion" class="according">
+
+          <div class="card text-dark">
+            <div class="card-header">
+              <a class="btn text-dark" data-bs-toggle="collapse" href="#collapseOne">
+                - Scientifec Methods 
+              </a>
+            </div>
+            <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+              <div class="card-body">
+                <li>
+                  They pointed very precisely to the north, using the stars as a guide.
+                </li>
+                <li>
+                  The pyramids were made mostly of limestone, and some had jewels and gold inside.
+                </li>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card text-dark">
+            <div class="card-header">
+              <a class="collapsed btn text-dark" data-bs-toggle="collapse" href="#collapseTwo">
+              - About Workers...
+              </a>
+            </div>
+            <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+              <div class="card-body">
+                <li>
+                  They were built to preserve tombs of pharaohs and their families.
+                </li>
+                <li>
+                  They were not built by slaves, but by skilled workers and farmers.
+                </li>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card text-dark">
+            <div class="card-header">
+              <a class="collapsed btn text-dark" data-bs-toggle="collapse" href="#collapseThree">
+              - Some Facts
+              </a>
+            </div>
+            <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+              <div class="card-body">
+                <li>
+                  The largest and oldest pyramid is the Great Pyramid of Giza, which is one of the Seven Wonders of the Ancient World.
+                </li>
+                <li>
+                  The pyramids had heavy doors, traps, curses, tunnels, and mysterious boxes to protect the tombs from robbers.
+                </li>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+      <div id="slide2" class="carousel carousel-fade slid col-sm-12 col-md-6 " data-bs-ride="carousel">
+
+      <!-- Indicators -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    
+      <!-- The slideshow -->
+      <div class="carousel-inner  fade show">
+        <div class="carousel-item active">
+          <img src="./img/Palast.jpg" alt="Los Angeles" class="d-block mx-auto" style="width:100%">
+          <!-- <div class="carousel-caption bg-dark rounded bg-opacity-50 width mx-auto p-5">
+            <h3>Palastine</h3>
+            <p>Where I Hope To Go </p>
+          </div> -->
+        </div>
+        <div class="carousel-item">
+          <img src="./img/Palastine.jpg" alt="Chicago" class="d-block mx-auto" style="width:100%">
+          <!-- <div class="carousel-caption bg-dark rounded bg-opacity-50 width mx-auto p-5">
+            <h3>Elquds</h3>
+            <p>Will Be Free Soon <bdi class="font-weight-bold p-2 bg-info bg-opacity-50 p-2 rounded">ان شاء الله</bdi></p>
+          </div>  -->
+        </div>
+        <!-- Left and right controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#slide2" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#slide2" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    
+      </div>
+    </div>
+  </div>
+  <!-- Slide Two _________________________________________________________________________________ -->
+  
+  <div id="menu2" class="container-fluid tab-pane bg-light p-2 fade"><br>
+    <div class="container row">
+      <div class="text bg-secondary bg-opacity-50 rounded-top col-sm-12  col-md-6">
+        <h3 class="text-dark">Some Info About South Africa</h3>
+
+        <div id="accordion" class="according">
+
+          <div class="card text-dark">
+            <div class="card-header">
+              <a class="btn text-dark" data-bs-toggle="collapse" href="#collapseOne">
+                - Scientifec Methods 
+              </a>
+            </div>
+            <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+              <div class="card-body">
+                <li>
+                  They pointed very precisely to the north, using the stars as a guide.
+                </li>
+                <li>
+                  The pyramids were made mostly of limestone, and some had jewels and gold inside.
+                </li>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card text-dark">
+            <div class="card-header">
+              <a class="collapsed btn text-dark" data-bs-toggle="collapse" href="#collapseTwo">
+              - About Workers...
+              </a>
+            </div>
+            <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+              <div class="card-body">
+                <li>
+                  They were built to preserve tombs of pharaohs and their families.
+                </li>
+                <li>
+                  They were not built by slaves, but by skilled workers and farmers.
+                </li>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card text-dark">
+            <div class="card-header">
+              <a class="collapsed btn text-dark" data-bs-toggle="collapse" href="#collapseThree">
+              - Some Facts
+              </a>
+            </div>
+            <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+              <div class="card-body">
+                <li>
+                  The largest and oldest pyramid is the Great Pyramid of Giza, which is one of the Seven Wonders of the Ancient World.
+                </li>
+                <li>
+                  The pyramids had heavy doors, traps, curses, tunnels, and mysterious boxes to protect the tombs from robbers.
+                </li>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+      <div id="slide3" class="carousel slid col-sm-12 col-md-6" data-bs-ride="carousel">
+
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#slide3" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#slide3" data-bs-slide-to="1"></button>
+        </div>
+      
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/southA.jpg" alt="Los Angeles" class="d-block mx-auto" style="width:100%">
+            <!-- <div class="carousel-caption bg-dark rounded bg-opacity-50 width mx-auto p-5">
+              <h3>South Africa</h3>
+              <p>Where Is The Most Butifull Countries. </p>
+            </div> -->
+          </div>
+          <div class="carousel-item">
+            <img src="./img/SouthAa.jpg" alt="Chicago" class="d-block mx-auto" style="width:100%">
+            <!-- <div class="carousel-caption bg-dark rounded bg-opacity-50 width mx-auto p-5">
+              <h3>SA</h3>
+              <p>I Hope To Visit It ..</p>
+            </div>  -->
+          </div>
+          <!-- Left and right controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#slide3" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#slide3" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+  <!-- Slide Three _________________________________________________________________________________ -->
+
+</div>
+</div>
+<!-- ____________________________________________ -->
+<div class="break1">
+
+</div>
+
+<!-- ____________________________________________ -->
+<div id="pop" class="popular rounded p-2 mt-5">
+  <div class="container-fluid bg-light">
+    <h2 class="text-center text-dark poptitel">Popular Destination</h2>
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item carou-eg active p-5">
+          <h3 class="text-dark f-family mb-2">In Egypt : </h3>
+          <div class="row justify-content-evenly">
+            <div class="card card-qur flash-parent col-12 col-sm-3 m-2 card-opacity  " >
+              <span class="flashing"></span>
+              <div class="card-body text-dark">
+                <h4 class="card-title f-ll">Giza</h4>
+                <p class="card-text">Influences of the past — Stories, desire and a vivid imagination attract people to this place.</p>
+                <a href="#" class="btn btn-outline-dark"  style="font-family: 'agbalumo';">Read More</a>
+              </div>
+              <img class="card-img-bottom img-thumbnail" src="./img/simon-berger-boyXZfqpwpU-unsplash.jpg" alt="Card image" style="width:100%">
+            </div>
+            <div class="card card-qur flash-parent col-12 col-sm-3 m-2 card-opacity " >
+              <span class="flashing"></span>
+              <div class="card-body text-dark">
+                <h4 class="card-title f-ll">Luxor</h4>
+                <p class="card-text">Karnak Temple, Luxor, Egypt</p>
+                <a href="#" class="btn btn-outline-dark"  style="font-family: 'agbalumo';">Read More</a>
+              </div>
+              <img class="card-img-bottom img-thumbnail" src="./img/aussieactive-GNdp2Q4VZjw-unsplash.jpg" alt="Card image" style="width:100%">
+            </div>
+            <div class="card card-qur flash-parent col-12 col-sm-3 m-2  card-opacity " >
+              <span class="flashing"></span>
+              <div class="card-body text-dark">
+                <h4 class="card-title f-ll">Cairo</h4>
+                <p class="card-text">The Mosque of Rifai and Sultan Hassan is truly an architectural miracle</p>
+                <a href="#" class="btn btn-outline-dark"  style="font-family: 'agbalumo';">Read More</a>
+              </div>
+              <img class="card-img-bottom img-thumbnail" src="./img/omar-elsharawy-pwMbtwA9LRc-unsplash.jpg" alt="Card image" style="width:100%">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item carou-pa  p-5">
+          <h3 class="text-light f-family mb-2">In Palastine : </h3>
+          <div class="row justify-content-evenly">
+            <div class="card card-qur flash-parent col-12 col-sm-3 m-2 card-opacity  " >
+              <span class="flashing"></span>
+              <div class="card-body text-light">
+                <h4 class="card-title  text-center">مدينة القدس</h4>
+                <p class="card-text d-flex align-items-end"><bdi>هي أولي القبلتين، ومدينة السلام، وأكبر المدن الفلسطينية من حيث المساحة والسكان،;</bdi></p>
+                <a href="#" class="btn btn-outline-light"  style="font-family: 'agbalumo';">Read More</a>
+              </div>
+              <img class="card-img-bottom img-thumbnail" src="./img/مدن-سياحية-في-فلسطين-1.jpg" alt="Card image" style="width:100%">
+            </div>
+            <div class="card card-qur flash-parent col-12 col-sm-3 m-2 card-opacity " >
+              <span class="flashing"></span>
+              <div class="card-body text-light">
+                <h4 class="card-title text-center">مدينة الرملة                </h4>
+                <p class="card-text d-flex align-items-end "><bdi>مدينة جميلة ورائعة من المدن الفلسطينية ;.</bdi></p>
+                <a href="#" class="btn btn-outline-light"  style="font-family: 'agbalumo';">Read More</a>
+              </div>
+              <img class="card-img-bottom img-thumbnail" src="./img/مدن-سياحية-في-فلسطين-2.jpg" alt="Card image" style="width:100%">
+            </div>
+            <div class="card card-qur flash-parent col-12 col-sm-3 m-2 card-opacity " >
+              <span class="flashing"></span>
+              <div class="card-body text-light">
+                <h4 class="card-title">مدينة شفا عمرو                </h4>
+                <p class="card-text d-flex align-items-end"><bdi>مدينة جميلة في فلسطين، يوجد بها معالم غاية الروعة والجمال كقلعة الظاهر عمر .                </bdi></p>
+                <a href="#" class="btn btn-outline-light"  style="font-family: 'agbalumo';">Read More</a>
+              </div>
+              <img class="card-img-bottom img-thumbnail" src="./img/مدن-سياحية-في-فلسطين-4.jpg" alt="Card image" style="width:100%">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item carou-sa  p-5">
+          <h3 class="text-grey bold f-family mb-2">In Africa : </h3>
+          <div class="row justify-content-evenly">
+            <div class="card card-qur flash-parent col-12 col-sm-3 m-2 card-opacity  " >
+              <span class="flashing"></span>
+              <div class="card-body text-grey bold">
+                <h4 class="card-title text-light f-ll">Nieu-Bethesda</h4>
+                <p class="card-text">Though a historic town in itself Nieu-Bethesda,</p>
+                <a href="#" class="btn btn-outline-dark"  style="font-family: 'agbalumo';">Read More</a>
+              </div>
+              <img class="card-img-bottom img-thumbnail" src="./img/nieu_bethesda.jpg" alt="Card image" style="width:100%">
+            </div>
+            <div class="card card-qur flash-parent col-12 col-sm-3 m-2 card-opacity " >
+              <span class="flashing"></span>
+              <div class="card-body text-grey bold">
+                <h4 class="card-title text-light f-ll">Clarens</h4>
+                <p class="card-text">Dating back to the early 20th century,</p>
+                <a href="#" class="btn btn-outline-dark"  style="font-family: 'agbalumo';">Read More</a>
+              </div>
+              <img class="card-img-bottom img-thumbnail" src="./img/clarens_za.jpg" alt="Card image" style="width:100%">
+            </div>
+            <div class="card card-qur flash-parent col-12 col-sm-3 m-2 card-opacity " >
+              <span class="flashing"></span>
+              <div class="card-body text-grey bold">
+                <h4 class="card-title text-light f-ll">Paternoster</h4>
+                <p class="card-text">One of the oldest fishing villages in South Africa, the Western Cape town of Paternoster is known for its lobsters,</p>
+                <a href="#" class="btn btn-outline-dark"  style="font-family: 'agbalumo';">Read More</a>
+              </div>
+              <img class="card-img-bottom img-thumbnail" src="./img/paternoster.jpg" alt="Card image" style="width:100%">
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+  </div>
+</div>
+
+<!-- ____________________________________________ -->
+<div class="break2">
+
+</div>
+<!-- ____________________________________________ -->
+<div id="about" class="thanks">
+  <div class="my-container m-5">
+    <h2 class="sp-title text-center">Thanks <small><sub class="sp-title">To</sub></small></h2>
+    <div class="boxes row justify-content-evenly">
+        <div class="box text-center col-8 col-sm-6 col-md-4 col-lg-3 m-2 d-flex flex-column justify-content-between">
+          <div class="box-head">
+            <h4>All Thanks & Apprechiate</h4>
+            <i class="fa-regular fa-clock"></i> November ,11 , 2023
+          </div>
+          <div class="body">
+            <div class="skill">
+              <h3 class="text-center">skills</h3>
+              <div class="bars row">
+                <div class="col-12 html">
+                  <span>Html</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                  </div>
+                </div>
+                <div class="col-12 css">
+                  <span>CSS</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
+                  </div>
+                </div>
+                <div class="col-12 js">
+                  <span>JS</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="icon">
+              <img src="./img/R.png" alt="">
+            </div>
+            <div class="text">
+              <h3>Eng : Abdallah M</h3>
+              <p>FrontEnd DEV</p>
+            </div>
+          </div>
+        </div>
+        <div class="box text-center col-8 col-sm-6 col-md-4 col-lg-3 m-2 d-flex flex-column justify-content-between">
+          <div class="box-head">
+            <h4>All Thanks & Apprechiate</h4>
+            <i class="fa-regular fa-clock"></i> November ,11 , 2023
+          </div>
+          <div class="body">
+            <div class="skill">
+              <h3 class="text-center">skills</h3>
+              <div class="bars row">
+                <div class="col-12 html">
+                  <span>Html</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                  </div>
+                </div>
+                <div class="col-12 css">
+                  <span>CSS</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
+                  </div>
+                </div>
+                <div class="col-12 js">
+                  <span>JS</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="icon">
+              <img src="./img/R.png" alt="">
+            </div>
+            <div class="text">
+              <h3>Eng : Abdallah M</h3>
+              <p>FrontEnd DEV</p>
+            </div>
+          </div>
+        </div>
+        <div class="box text-center col-8 col-sm-6 col-md-4 col-lg-3  m-2 d-flex flex-column justify-content-between">
+          <div class="box-head">
+            <h4>All Thanks & Apprechiate</h4>
+            <i class="fa-regular fa-clock"></i> November ,11 , 2023
+          </div>
+          <div class="body">
+            <div class="skill">
+              <h3 class="text-center">skills</h3>
+              <div class="bars row">
+                <div class="col-12 html">
+                  <span>Html</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                  </div>
+                </div>
+                <div class="col-12 css">
+                  <span>CSS</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
+                  </div>
+                </div>
+                <div class="col-12 js">
+                  <span>JS</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="icon">
+              <img src="./img/R.png" alt="">
+            </div>
+            <div class="text">
+              <h3>Eng : Abdallah M</h3>
+              <p>FrontEnd DEV</p>
+            </div>
+          </div>
+        </div>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- ____________________________________________ -->
+<div class="news p-4">
+    <h2 class=" text-center sp-title mb-5"> Hot<small><sub class="sp-title">News</sub></small></h2>
+  <div class="cont rounded row">
+      <div class="text col-sm-8">
+        <div class="head">
+          <h3>Title</h3>
+          <p>
+            <i class="fa-solid fa-calendar-days"></i>
+            <span>Sun, Marsh , 11th , 2023</span>
+          </p>
+        </div>
+        <div class="body">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est veniam officiis animi atque non, repellendus nihil recusandae unde excepturi ipsam a fugit ad modi, nesciunt facilis, suscipit minus ea architecto?
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est veniam officiis animi atque non, repellendus nihil recusandae unde excepturi ipsam a fugit ad modi, nesciunt facilis, suscipit minus ea architecto?
+        </div>
+        <div class="foot">
+          <ul class="d-flex mt-3">
+            <li>
+              <i class="fa-solid fa-tag"></i>
+              Podcast
+            </li>
+            <li>
+              <i class="fa-solid fa-clock"></i>
+              55 Min
+            </li>
+            <li>
+              <i class="fa-solid fa-play"></i>
+              PlayEP
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="img col-sm-4">
+        <img src="./img/mountainvalley.jpg" alt="Ballon">
+      </div>
+  </div>
+  <div class="cont rounded row flex-row-reverse">
+      <div class="text col-sm-8">
+        <div class="head">
+          <h3>Title</h3>
+          <p>
+            <i class="fa-solid fa-calendar-days"></i>
+            <span>Sun, Marsh , 11th , 2023</span>
+          </p>
+        </div>
+        <div class="body">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est veniam officiis animi atque non, repellendus nihil recusandae unde excepturi ipsam a fugit ad modi, nesciunt facilis, suscipit minus ea architecto?
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est veniam officiis animi atque non, repellendus nihil recusandae unde excepturi ipsam a fugit ad modi, nesciunt facilis, suscipit minus ea architecto?
+        </div>
+        <div class="foot">
+          <ul class="d-flex mt-3">
+            <li>
+              <i class="fa-solid fa-tag"></i>
+              Podcast
+            </li>
+            <li>
+              <i class="fa-solid fa-clock"></i>
+              55 Min
+            </li>
+            <li>
+              <i class="fa-solid fa-play"></i>
+              PlayEP
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="sec col-sm-4">
+        <img  src="./img/mountainvalley.jpg" alt="Ballon">
+      </div>
+  </div>
+  <div class="cont rounded row">
+    <div class="text col-sm-8">
+      <div class="head">
+        <h3>Title</h3>
+        <p>
+          <i class="fa-solid fa-calendar-days"></i>
+          <span>Sun, Marsh , 11th , 2023</span>
+        </p>
+      </div>
+      <div class="body">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est veniam officiis animi atque non, repellendus nihil recusandae unde excepturi ipsam a fugit ad modi, nesciunt facilis, suscipit minus ea architecto?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est veniam officiis animi atque non, repellendus nihil recusandae unde excepturi ipsam a fugit ad modi, nesciunt facilis, suscipit minus ea architecto?
+      </div>
+      <div class="foot">
+        <ul class="d-flex mt-3">
+          <li>
+            <i class="fa-solid fa-tag"></i>
+            Podcast
+          </li>
+          <li>
+            <i class="fa-solid fa-clock"></i>
+            55 Min
+          </li>
+          <li>
+            <i class="fa-solid fa-play"></i>
+            PlayEP
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="img col-sm-4">
+      <img src="./img/mountainvalley.jpg" alt="Ballon">
+    </div>
+  </div>
+  <div class="cont rounded row flex-row-reverse">
+    <div class="text col-sm-8">
+      <div class="head">
+        <h3>Title</h3>
+        <p>
+          <i class="fa-solid fa-calendar-days"></i>
+          <span>Sun, Marsh , 11th , 2023</span>
+        </p>
+      </div>
+      <div class="body">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est veniam officiis animi atque non, repellendus nihil recusandae unde excepturi ipsam a fugit ad modi, nesciunt facilis, suscipit minus ea architecto?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est veniam officiis animi atque non, repellendus nihil recusandae unde excepturi ipsam a fugit ad modi, nesciunt facilis, suscipit minus ea architecto?
+      </div>
+      <div class="foot">
+        <ul class="d-flex mt-3">
+          <li>
+            <i class="fa-solid fa-tag"></i>
+            Podcast
+          </li>
+          <li>
+            <i class="fa-solid fa-clock"></i>
+            55 Min
+          </li>
+          <li>
+            <i class="fa-solid fa-play"></i>
+            PlayEP
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="sec col-sm-4">
+      <img  src="./img/mountainvalley.jpg" alt="Ballon">
+    </div>
+</div>
+</div>
+<!-- ______________________________________________________________________- -->
+<div id="res" class=" reserv bg-light bg-gradient">
+  <div class="container">
+    <h2 class=" text-center sp-title mb-5">Reservation</h2>
+    <form class="row p-3" action="">
+      <div class="col">
+      <input class=" text-light form-control mb-3" type="text" name="name" id="name" placeholder="Your Name">
+        <input class=" text-light form-control mb-3" type="email" name="email" id="email" placeholder="Your Email">
+        <input class=" text-light form-control mb-3" type="number" name="number" id="number" placeholder="Your Number">
+      </div>
+    <div class="col">
+      
+      <input class=" text-light form-control mb-3" type="number" name="number" id="number" placeholder="Number Of Traveller">
+      <h5 class="text-center">Is There Childeren Or Elderly</h5>
+      <div class="child d-flex ">
+        <h6>There Is Children :</h6>
+        <div class="form-check mx-4">
+          <input class="form-check-input" type="radio" name="children" value="Yes" id="check1">
+          <label class="form-check-label" for="check1">
+            Yes
+          </label>
+        </div>
+  
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="children" value="No" id="check12">
+            <label class="form-check-label" for="check12">
+              No
+            </label>
+          </div>
+      </div>
+      <div class="elder d-flex">
+        <h6>There Is Elderly :</h6>
+        <div class="form-check mx-4">
+          <input class="form-check-input" type="radio" name="elder" value="Yes" id="check2">
+          <label class="form-check-label" for="check2">
+            Yes
+          </label>
+        </div>
+  
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="elder" value="No" id="check21">
+            <label class="form-check-label" for="check21">
+              No
+            </label>
+          </div>
+      </div>
+    </div>
+    </form>
+  </div>
+</div>
+
+<!-- ______________________________________________________________________- -->
+<div id="ask" class="ask bg-secondary bg-opacity-50">
+  <h2 class=" text-center sp-title mb-5">Ask<small><sub class="sp-title">Us</sub></small></h2>
+  <div class="container">
+    <div class="area row">
+      <form class="" action="">
+        <input class="form-control mb-3" type="text" name="name" id="name" placeholder="Your Name">
+        <div class="d-flex">
+          <input class="form-control mx-2 mb-3" type="email" name="email" id="email" placeholder="Your Email">
+          <input class="form-control mb-3" type="number" name="number" id="number" placeholder="Your Number">
+
+        </div>
+        <textarea class="form-control mb-3" name="Question" id="" cols="10" rows="5" placeholder="Write Your Qustion..."></textarea>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- ___________________________________________________________ -->
+<div class="footer bg-dark">
+<div class="container row">
+  <div class="lists col col-sm-7 d-flex">
+    <ul class="d-flex flex-column">
+      <li>
+        <a href="#">About Us</a>
+      </li>
+      <li>
+          <a href="#">Our Services</a>
+      </li>
+      <li>
+          <a href="#">Privacy Policy</a>
+      </li>
+      <li>
+          <a href="#">Copy Right &copy; </a>
+      </li>
+    </ul>
+    <ul class="d-flex flex-column">
+      <li>
+        <a href="#">About Us</a>
+      </li>
+      <li>
+          <a href="#">Our Services</a>
+      </li>
+      <li>
+          <a href="#">Privacy Policy</a>
+      </li>
+      <li>
+          <a href="#">Copy Right &copy; </a>
+      </li>
+    </ul>
+  </div>
+  <div class="img col-12 col-sm-5">
+    <img src="./img/R.jpeg" alt="">
+  </div>
+</div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
